@@ -1,22 +1,7 @@
-# Mini Calculadora — proyecto para aprender pruebas
+# Mini Calculadora 
 
-Proyecto mínimo pensado para dar clase, tema por tema. No lo copies todo de
-una vez: ve construyéndolo en el orden de abajo, corriendo los comandos en
-cada paso.
 
-## Instalación
-
-```powershell
-mkdir mini-calculadora
-cd mini-calculadora
-python -m venv venv
-.\venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-```
-
-## Orden sugerido de clase
-
-### 1. Introducción a Pytest + pruebas unitarias
+### 1. Pruebas unitarias
 Archivos: `calculadora.py`, `tests/test_calculadora.py`
 
 ```bash
@@ -40,7 +25,7 @@ Archivo: `tests/test_regresion.py`
 ```bash
 pytest tests/test_regresion.py -v
 ```
-Ejercicio en vivo: cambien algo en `calculadora.py` (por ejemplo rompan
+Cambien algo en `calculadora.py` (por ejemplo rompan
 `restar`) y corran de nuevo. La prueba debe fallar de inmediato.
 
 ### 4. Depuración y análisis de código
@@ -55,10 +40,7 @@ Este test **falla a propósito**. Pasos para depurar:
    en modo `pdb` (comandos útiles: `n` siguiente línea, `p numero` para ver
    el valor, `c` continuar).
 3. Corregir el bug (`== 1` debería ser `== 0`).
-4. Correr análisis estático de código:
-```bash
-flake8 . --max-line-length=100
-```
+
 
 ### 5. Pruebas de seguridad
 Archivo: `tests/test_seguridad.py`
