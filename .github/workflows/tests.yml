@@ -29,4 +29,4 @@ jobs:
 
       - name: Ejecutar pruebas (sin Selenium, no hay navegador en CI)
         run: |
-          pytest tests/
+          python -m pytest tests/
