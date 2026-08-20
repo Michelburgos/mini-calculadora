@@ -7,8 +7,6 @@ Archivos: `calculadora.py`, `tests/test_calculadora.py`
 ```bash
 pytest tests/test_calculadora.py -v
 ```
-Expliquen `assert`, casos positivos y negativos, y cómo pytest detecta
-automáticamente cualquier archivo `test_*.py`.
 
 ### 2. Pruebas de integración
 Archivos: `app.py`, `templates/index.html`, `tests/test_integracion.py`
