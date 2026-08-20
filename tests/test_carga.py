@@ -10,5 +10,4 @@ def test_muchas_sumas_seguidas():
     assert resultado == 1000
 
 # Nota: esto NO es una prueba de carga real con usuarios HTTP concurrentes.
-# Es un calentamiento para entender el concepto antes de usar Locust
-# (ver locustfile.py en la raíz del proyecto).
+
