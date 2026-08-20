@@ -1,0 +1,32 @@
+name: Pruebas
+
+on:
+  push:
+  pull_request:
+
+jobs:
+
+  pruebas:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar proyecto
+        uses: actions/checkout@v4
+
+      - name: Instalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependencias
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Analizar el código con flake8
+        run: |
+          flake8 . --exclude=venv,.venv --max-line-length=100
+
+      - name: Ejecutar pruebas (sin Selenium, no hay navegador en CI)
+        run: |
+          pytest tests/
