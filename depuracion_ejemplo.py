@@ -9,4 +9,3 @@ def es_par(numero):
         return True
     else:
         return False
-
