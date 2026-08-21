@@ -10,4 +10,3 @@ def test_muchas_sumas_seguidas():
     assert resultado == 1000
 
 # Nota: esto NO es una prueba de carga real con usuarios HTTP concurrentes.
-
